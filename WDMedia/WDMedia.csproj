@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48284AF1-890E-41C4-9884-7C050D5C989E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WDMedia</RootNamespace>
+    <AssemblyName>WDMedia</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="sfmlnet-audio-2">
+      <HintPath>..\..\..\..\SDK's\SFML.Net\SFML.Net-2.1 32 Bit\lib\sfmlnet-audio-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-graphics-2">
+      <HintPath>..\..\..\..\SDK's\SFML.Net\SFML.Net-2.1 32 Bit\lib\sfmlnet-graphics-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-window-2">
+      <HintPath>..\..\..\..\SDK's\SFML.Net\SFML.Net-2.1 32 Bit\lib\sfmlnet-window-2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataStore.cs" />
+    <Compile Include="GameLibrary\GameListManager.cs" />
+    <Compile Include="Game\BasicGame.cs" />
+    <Compile Include="Game\GameHelpers.cs" />
+    <Compile Include="Game\IGame.cs" />
+    <Compile Include="Game\IGameHostWindow.cs" />
+    <Compile Include="Game\IHasBasicGameState.cs" />
+    <Compile Include="Game\Player.cs" />
+    <Compile Include="Game\PlayerStateType.cs" />
+    <Compile Include="Game\ScreenTileHelper.cs" />
+    <Compile Include="Game\ScreenTileManager.cs" />
+    <Compile Include="Game\StateBasedBasicGame.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rendering\I2DPerformanceRenderer.cs" />
+    <Compile Include="Rendering\IPRRenderable.cs" />
+    <Compile Include="Rendering\SFMLPerformanceRenderer.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="SceneGraph\Entity.cs" />
+    <Compile Include="SceneGraph\IMotionController.cs" />
+    <Compile Include="SceneGraph\INode.cs" />
+    <Compile Include="SceneGraph\IUpdateable.cs" />
+    <Compile Include="SceneGraph\Pane.cs" />
+    <Compile Include="SceneGraph\Panes\ImagePane.cs" />
+    <Compile Include="SceneGraph\Panes\EntityPane.cs" />
+    <Compile Include="SceneGraph\Panes\TiledPane.cs" />
+    <Compile Include="SceneGraph\Sprites\Dictionaty.cs" />
+    <Compile Include="SceneGraph\Sprites\ISprite.cs" />
+    <Compile Include="SceneGraph\Sprites\LayeredSprite.cs" />
+    <Compile Include="SceneGraph\Sprites\Sprite.cs" />
+    <Compile Include="SceneGraph\Sprites\SpriteHelper.cs" />
+    <Compile Include="SceneGraph\Sprites\SpriteSettingsFile.cs" />
+    <Compile Include="Tiles\ITileSet.cs" />
+    <Compile Include="Tiles\TileFactory.cs" />
+    <Compile Include="Tiles\IsoMetricTileHelper.cs" />
+    <Compile Include="Tiles\TileSet.cs" />
+    <Compile Include="SceneGraph\World.cs" />
+    <Compile Include="SceneGraph\WorldView.cs" />
+    <Compile Include="Tiles\Tile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SceneGraph\MotionControllers\" />
+    <Folder Include="SceneGraph\Nodes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WDLibApplicationFramework\WDLibApplicationFramework.csproj">
+      <Project>{3b8887a9-fd3f-4b3f-942b-ffa7ce8cb0ee}</Project>
+      <Name>WDLibApplicationFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WDLib\WDLib.csproj">
+      <Project>{6f9e3748-7fd0-47cc-ab95-789494178022}</Project>
+      <Name>WDLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76D10A06-66EE-43B6-82CB-CFD2B5E4D7A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WDDevice</RootNamespace>
+    <AssemblyName>WDDevice</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Coms\IAuthenticatedSession.cs" />
+    <Compile Include="Coms\IComDevice.cs" />
+    <Compile Include="Coms\IComDeviceBase.cs" />
+    <Compile Include="Coms\INetworkCom.cs" />
+    <Compile Include="Coms\PortFinder.cs" />
+    <Compile Include="Coms\SerialPortSettings.cs" />
+    <Compile Include="Coms\SSHCom.cs" />
+    <Compile Include="Coms\TelnetCom.cs" />
+    <Compile Include="ControlTasks\Specific\SingleCommandTask.cs" />
+    <Compile Include="ControlTasks\TaskBase.cs" />
+    <Compile Include="ControlTasks\IControlTask.cs" />
+    <Compile Include="ControlTasks\IImageGrabber.cs" />
+    <Compile Include="ControlTasks\IWebCamTask.cs" />
+    <Compile Include="ControlTasks\Specific\MJpgStreamerTask.cs" />
+    <Compile Include="ControlTasks\Specific\TelnetForwardTask.cs" />
+    <Compile Include="Device\IDevice.cs" />
+    <Compile Include="LinuxBoards\ILinuxBoard.cs" />
+    <Compile Include="LinuxBoards\RaspberryPi\RaspberryPi.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Robot\IRobot.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WDLib\WDLib.csproj">
+      <Project>{6f9e3748-7fd0-47cc-ab95-789494178022}</Project>
+      <Name>WDLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

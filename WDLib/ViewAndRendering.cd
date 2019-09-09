@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WD_toolbox.Rendering.GDIPlusRenderer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AHAACAgQBjAAAABACArggMQIgCAABpgpKEGAAwTYYAA=</HashCode>
+      <FileName>Rendering\GDIPlusRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.RendererSettings" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAQAAAAABAABAAAAAgAAAAA=</HashCode>
+      <FileName>Rendering\IRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.GeometeryRenderer&lt;GT, PT, ST&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Rendering\Geometry\GeometeryRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.RenderableGeometry&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Rendering\Geometry\RenderableGeometry.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.RenderablePath&lt;P&gt;" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAQAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Rendering\Geometry\RenderableGeometry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.RenderableShape&lt;S&gt;" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Rendering\Geometry\RenderableGeometry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WD_toolbox.Rendering.Colour.IColour&lt;colType&gt;" Collapsed="true">
+    <Position X="12.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAQAAAEQAAAAAAAAAAAAAAAAIAAAABAAAA=</HashCode>
+      <FileName>Rendering\Colour\IColour.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.IRenderable" Collapsed="true">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAA=</HashCode>
+      <FileName>Rendering\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.IRenderer" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AFAAAAgQBBAAAAAACALAgEQAgCAABpApKEGAAgTIAAA=</HashCode>
+      <FileName>Rendering\IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.IRendererSettings" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAABAABAAAAAgAAAAA=</HashCode>
+      <FileName>Rendering\IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IGeometeryRenderer&lt;G, GT, P, PT, S, ST&gt;" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Rendering\Geometry\GeometeryRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IRenderableGeometry&lt;T&gt;" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Rendering\Geometry\RenderableGeometry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IRenderablePath&lt;P&gt;" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rendering\Geometry\RenderableGeometry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IRenderableShape&lt;S&gt;" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rendering\Geometry\RenderableGeometry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="WD_toolbox.Rendering.RendererLineCapStyle" Collapsed="true">
+    <Position X="12.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Rendering\IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WD_toolbox.Rendering.AngleTypes" Collapsed="true">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Rendering\IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

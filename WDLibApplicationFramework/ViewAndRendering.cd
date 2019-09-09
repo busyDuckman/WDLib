@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WD_toolbox.Rendering.GDIPlusRenderer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.RendererSettings" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.GeometeryRenderer&lt;GT, PT, ST&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.RenderableGeometry&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.RenderablePath&lt;P&gt;" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="WD_toolbox.Rendering.Geometry.RenderableShape&lt;S&gt;" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.Grid.DistanceGrid" Collapsed="true">
+    <Position X="1.5" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAQAAAAAAUAAABAAAAEAABAAAACAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\Grid\DistanceGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.Grid.ViewGridBase">
+    <Position X="3.5" Y="23.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAACAAAAAAAABAAAAAAAAJIACAAAAAAAAhA=</HashCode>
+      <FileName>ViewAndEdit2D\Grid\IViewGrid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.Grid.SimpleGrid" Collapsed="true">
+    <Position X="3.5" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAABAAAAAAAAAAIAA=</HashCode>
+      <FileName>ViewAndEdit2D\Grid\SimpleGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.EditableView2DBase&lt;T&gt;" Collapsed="true">
+    <Position X="2.75" Y="14.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAIQIAYAiRAEAUAAAIBEAASAQgIABAADoBBCAACCJA=</HashCode>
+      <FileName>ViewAndEdit2D\IEditableView2D.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.IInputView2DExtension" Collapsed="true">
+    <Position X="12.75" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAgACACAAAEAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\IInputView2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.IView2DExtension" Collapsed="true">
+    <Position X="15" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAEAAAAAABAAAAAAAAAAAAAAABAAAIAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\IView2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.MouseEventWorldSpace">
+    <Position X="0.5" Y="19.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="WDLibApplicationFramework.ViewAndEdit2D.MouseEventWorldSpace.WSMouseEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ViewAndEdit2D\MouseEventWorldSpace.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\MouseEventWorldSpace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.RasterView2D">
+    <Position X="5.5" Y="14.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="WDLibApplicationFramework.ViewAndEdit2D.View2dBase" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="12.812" />
+        <Point X="5.5" Y="13.875" />
+        <Point X="6.25" Y="13.875" />
+        <Point X="6.25" Y="14.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAABAAAAAAABA=</HashCode>
+      <FileName>ViewAndEdit2D\RasterView2D.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.View2dBase" Collapsed="true">
+    <Position X="4.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBECABAQBEQAAAEAAAABABwAAABMAQABAAAAAEBBA=</HashCode>
+      <FileName>ViewAndEdit2D\View2dBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.LayeredEditor.LayeredEditorView2D&lt;TYPE&gt;" Collapsed="true">
+    <Position X="2.75" Y="15.5" Width="2.25" />
+    <InheritanceLine Type="WDLibApplicationFramework.ViewAndEdit2D.EditableView2DBase&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="3.875" Y="14.941" />
+        <Point X="3.875" Y="15.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAABAABAAAABA=</HashCode>
+      <FileName>ViewAndEdit2D\LayeredEditor\LayeredEditorView2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.LayeredEditor.VectorObjectLayer" Collapsed="true">
+    <Position X="13.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\LayeredEditor\Layers\VectorObjectLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.LayeredEditor.WSWidgetLayer" Collapsed="true">
+    <Position X="13.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\LayeredEditor\Layers\WSWidgetLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.LayeredEditor.Layers.Layer" Collapsed="true">
+    <Position X="13" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAgAAAAAAAAAAAAAAAAAAAAAAAAKBAAAAAAAAE=</HashCode>
+      <FileName>ViewAndEdit2D\LayeredEditor\Layers\Layer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.LayeredEditor.Layers.RasterLayer" Collapsed="true">
+    <Position X="13" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAABAAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\LayeredEditor\Layers\RasterLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.ViewAndEdit2D.LayeredEditor.VectorObjects.VoBase" Collapsed="true">
+    <Position X="15" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\LayeredEditor\VectorObjects\VoBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WDLibApplicationFramework.AplicationFramework.Controls.ViewBox2D" Collapsed="true">
+    <Position X="4.5" Y="9.75" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="WDLibApplicationFramework.AplicationFramework.Controls.ViewBox2D.ViewInteractionStates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AplicationFramework\Controls\ViewBox2D.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="WDLibApplicationFramework.AplicationFramework.Controls.ViewBox2D.POINT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AplicationFramework\Controls\ViewBox2D.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Delegate Name="WDLibApplicationFramework.AplicationFramework.Controls.ViewBox2D.ViewChangeDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AplicationFramework\Controls\ViewBox2D.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <AssociationLine Name="view" Type="WDLibApplicationFramework.ViewAndEdit2D.IView2D" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.719" Y="10.441" />
+        <Point X="4.719" Y="11.312" />
+        <Point X="4" Y="11.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.823" Y="0.635" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>UgC0AF0EhaIAAKAETLiUUCkHRIFLBGgQpcAoFYAMMTA=</HashCode>
+      <FileName>AplicationFramework\Controls\ViewBox2D.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="view" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WDLibApplicationFramework.Gizmos.GizmoHandle" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="19.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAgBAAAAABAAAAAAACAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Gizmos\IGizmo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="WD_toolbox.Rendering.IRenderable" Collapsed="true">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.IRenderer" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.IRendererSettings" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IGeometeryRenderer&lt;G, GT, P, PT, S, ST&gt;" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IRenderableGeometry&lt;T&gt;" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IRenderablePath&lt;P&gt;" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="WD_toolbox.Rendering.Geometry.IRenderableShape&lt;S&gt;" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="WDLibApplicationFramework.ViewAndEdit2D.Grid.IViewGrid" Collapsed="true">
+    <Position X="1.5" Y="23.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAAAAAAAAAAAAAABAACAAAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\Grid\IViewGrid.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WDLibApplicationFramework.ViewAndEdit2D.IEditableView2D">
+    <Position X="0.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAQAAAAAAAIAEAAAAAgAABAAAAAAAAACAAA=</HashCode>
+      <FileName>ViewAndEdit2D\IEditableView2D.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WDLibApplicationFramework.ViewAndEdit2D.IInputEventHandeler" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAIAAAQAiBAAAUAAAABAAASAQAIAAAADoBACAAAAJA=</HashCode>
+      <FileName>ViewAndEdit2D\IInputEventHandeler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WDLibApplicationFramework.ViewAndEdit2D.IInputView2D" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <InheritanceLine Type="WDLibApplicationFramework.ViewAndEdit2D.IInputEventHandeler" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="11.062" />
+        <Point X="1.25" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewAndEdit2D\IInputView2D.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WDLibApplicationFramework.ViewAndEdit2D.IView2D">
+    <Position X="2.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAAAQBAQAAAEAAAAAABAAAABMAAABAAAAAAABA=</HashCode>
+      <FileName>ViewAndEdit2D\IView2D.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WDLibApplicationFramework.Gizmos.IGizmo">
+    <Position X="0.5" Y="16.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAiAAAEAEAAAAAAAAAAAAAAABAAAAACAAAAgAA=</HashCode>
+      <FileName>Gizmos\IGizmo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WDLibApplicationFramework.Gizmos.IGizmoHandle">
+    <Position X="3.25" Y="16.75" Width="1.5" />
+    <AssociationLine Name="OnDrag" Type="WDLibApplicationFramework.Gizmos.GizmoDragDelegate">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.658" Y="0.107" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAgBAAAAABAAAAAAACAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Gizmos\IGizmo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OnDrag" />
+    </ShowAsAssociation>
+  </Interface>
+  <Enum Name="WD_toolbox.Rendering.RendererLineCapStyle" Collapsed="true">
+    <Position X="12.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="WD_toolbox.Rendering.AngleTypes" Collapsed="true">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Delegate Name="WDLibApplicationFramework.Gizmos.GizmoDragDelegate">
+    <Position X="6.25" Y="16.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAgAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gizmos\IGizmo.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
